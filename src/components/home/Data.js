@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        John Smith
+        Vedant Thakre
         <svg
           width="36"
           height="36"
@@ -61,7 +61,7 @@ const Data = () => {
         dedicated to my work.
       </p>
 
-      <a href="#contact" className="button button--flex">
+      <a href="" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"

@@ -18,14 +18,27 @@
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--title-color);
+    cursor: pointer;
 }
 
 .home__social-icon:hover {
     color: var(--title-color-dark);
+    cursor: pointer;
+}
+
+.home__social-Icon {
+    font-size: 1.49rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.home__social-Icon:hover {
+    color: var(--title-color-dark);
+    cursor: pointer;
 }
 
 .home__title {
-    font-size: var(--big-font-size);
+    font-size: var(--h1-name-font);
     margin-bottom: var(--mb-0-25);
 }
 

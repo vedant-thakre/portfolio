@@ -29,36 +29,41 @@ const Contact = () => {
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="uil uil-envelope contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">vedant@gmail.com</span>
+              <span className="contact__card-data">
+                vedantthakre7@gmail.com
+              </span>
 
-              <a href="" className="contact__button">
+              <a
+                href="https://mail.google.com/mail/u/vedantthakre7@gmail.com"
+                className="contact__button"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
+              <i className="uil uil-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">Mobile No</h3>
               <span className="contact__card-data">9309132095</span>
 
-              <a href="" className="contact__button">
+              <a href="https://wa.link/xvfld6" className="contact__button">
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
+              <i className="uil uil-telegram-alt contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Instagram</h3>
-              <span className="contact__card-data">vedant__thakre</span>
+              <h3 className="contact__card-title">Telegram</h3>
+              <span className="contact__card-data">@vedantthakre</span>
 
-              <a href="" className="contact__button">
+              <a href="https://t.me/vedantthakre" className="contact__button">
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>

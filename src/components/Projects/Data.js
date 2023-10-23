@@ -8,13 +8,19 @@ export const ProjectsData = [
   {
     id: 1,
     image: work1,
-    title: "Chat App",
+    title: "OneChat",
     category: "fullstack",
   },
   {
     id: 2,
     image: work2,
     title: "Codemon",
+    category: "fullstack",
+  },
+  {
+    id: 5,
+    image: work5,
+    title: "TaskDone",
     category: "fullstack",
   },
   {
@@ -28,12 +34,6 @@ export const ProjectsData = [
     image: work4,
     title: "Text Editor",
     category: "frontend",
-  },
-  {
-    id: 5,
-    image: work5,
-    title: "TaskDone",
-    category: "fullstack",
   },
   {
     id: 6,
