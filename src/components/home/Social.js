@@ -3,7 +3,7 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="https://www.instagram.com"
+        href="https://www.twitter.com"
         className="home__social-icon"
         target="_black"
       >
