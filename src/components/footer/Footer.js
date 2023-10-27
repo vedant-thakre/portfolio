@@ -5,53 +5,53 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Smith</h1>
+        <h1 className="footer__title">Vedant</h1>
 
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
-              About
+              Home
             </a>
           </li>
 
           <li>
             <a href="#projects" className="footer__link">
-              Projects
+              About
             </a>
           </li>
 
           <li>
             <a href="#home" className="footer__link">
-              Home
+              Projects
             </a>
           </li>
         </ul>
 
         <div className="footer__social">
           <a
-            href="https://www.facebook.com"
+            href="https://www.linkedin.com/in/ved-thakre"
             className="footer__social-link"
             target="_black"
           >
-            <i className="bx bxl-facebook"></i>
+            <i className="bx bxl-linkedin"></i>
           </a>
           <a
-            href="https://www.instagram.com"
-            className="footer__social-link"
-            target="_black"
-          >
-            <i className="bx bxl-instagram"></i>
-          </a>
-          <a
-            href="https://www.twitter.com"
+            href="https://twitter.com/Vedant_I0"
             className="footer__social-link"
             target="_black"
           >
             <i className="bx bxl-twitter"></i>
           </a>
+          <a
+            href="https://wa.link/xvfld6"
+            className="footer__social-link"
+            target="_black"
+          >
+            <i className="bx bxl-whatsapp"></i>
+          </a>
         </div>
         <span className="footer__copy">
-          &#169; Crypticalcoder. All right reserved
+          &#169; VedantThakre. 
         </span>
       </div>
     </footer>
