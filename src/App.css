@@ -204,7 +204,7 @@ section {
   }
 
   .section {
-    padding: 2rem 0 4rem;
+    padding: 0 0 4rem;
   }
 
   .section__subtitle {
@@ -222,6 +222,14 @@ section {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+  .main>* {
+    margin-bottom: 0.5rem;
+    /* Adjust the value as needed */
+  }
+
+  section {
+    padding: 0 0 2rem;
   }
 }
 
