@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@300&display=swap');
 
 /* Variables CSS */
+
+.main>* {
+  margin-bottom: 5.5rem;
+  /* Adjust the value as needed */
+}
+
 :root {
   --header-height: 3rem;
 

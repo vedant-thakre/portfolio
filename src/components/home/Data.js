@@ -55,13 +55,13 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Visual Designer</h3>
+      <h3 className="home__subtitle">Fullstack Developer</h3>
       <p className="home__description">
-        I'm creative designer based in New York, and I'm very passionate and
-        dedicated to my work.
+        I am a full-stack developer, and I'm deeply passionate
+        about problem solving and competative programming.
       </p>
 
-      <a href="" className="button button--flex">
+      <a href="#contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"

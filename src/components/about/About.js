@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutImg from '../../assets/about.jpeg';
+import AboutImg from '../../assets/about.jpg';
 import CV from '../../assets/John-Cv.pdf';
 import Info from './Info';
 
@@ -18,9 +18,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experence and many clients are happy with the
-            projects carried out.
+            Fullstack developer, I create web pages with UI / UX user interface,
+            I have build various projects and solved more than 500+ questions.
+
           </p>
 
           <a href={CV} className="button button--flex">
