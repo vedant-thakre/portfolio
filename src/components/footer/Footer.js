@@ -7,14 +7,12 @@ const Footer = () => {
    const getCount = async () => {
      try {
        const response = await fetch(
-         `${process.env.API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
+         `${process.env.REACT_APP_API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
          {
            method: "PUT",
          }
        );
        const data = await response.json();
-
-       console.log(data);
 
        setVisitCount(data.updatedCount);
      } catch (error) {
@@ -77,7 +75,7 @@ const Footer = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <span className="footer__copy">&#169; VedantThakre.</span>
-          <span className="footer__count">{visitCount ?? ""}</span>
+          <span className="footer__count">{visitCount}</span>
         </div>
       </div>
     </footer>
