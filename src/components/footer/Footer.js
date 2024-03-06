@@ -5,6 +5,7 @@ const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
   const getCount = () => {
+    console.log("Count function triggered");
     fetch(
       "https://api.countapi.xyz/update/https://vedant-thakre.vercel.app/mouse/?amount=1"
     )
