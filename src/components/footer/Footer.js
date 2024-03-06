@@ -7,16 +7,15 @@ const Footer = () => {
    const getCount = async () => {
      try {
        const response = await fetch(
-         "https://countapi-jota.onrender.com/api/v1/increase?id=vedant_thakre&value=1",
+         `${process.env.API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
          {
-           method: "PUT", // Corrected placement as an option
+           method: "PUT",
          }
        );
        const data = await response.json();
 
        console.log(data);
 
-       // Assuming the API response contains the count in a 'value' property
        setVisitCount(data.updatedCount);
      } catch (error) {
        console.error("Error fetching visit count:", error);
@@ -82,7 +81,7 @@ const Footer = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <span className="footer__copy">&#169; VedantThakre.</span>
-          <span className="footer__count">{visitCount}</span>
+          <span className="footer__count">{visitCount ? visitCount : ""}</span>
         </div>
       </div>
     </footer>
