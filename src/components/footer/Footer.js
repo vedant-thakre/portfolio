@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./footer.css";
 
 const Footer = () => {
-  const [visitCount, setVisitCount] = useState(0);
+  const [visitCount, setVisitCount] = useState(null);
 
    const getCount = async () => {
      try {
@@ -27,6 +27,10 @@ const Footer = () => {
    useEffect(() => {
      getCount();
    },[]);
+
+   if (visitCount === null) {
+     return null;
+   }
 
   return (
     <footer className="footer">
