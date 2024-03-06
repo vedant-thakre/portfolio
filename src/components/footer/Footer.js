@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <span className="footer__copy">&#169; VedantThakre.</span>
-          <span className="footer__count">{visitCount ? visitCount : ""}</span>
+          <span className="footer__count">{visitCount ?? ""}</span>
         </div>
       </div>
     </footer>
