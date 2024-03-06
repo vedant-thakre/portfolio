@@ -11,6 +11,8 @@ const Footer = () => {
        );
        const data = await response.json();
 
+       console.log(data);
+
        // Assuming the API response contains the count in a 'value' property
        setVisitCount(data.value);
      } catch (error) {
