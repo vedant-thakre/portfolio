@@ -5,6 +5,7 @@ const Footer = () => {
   const [visitCount, setVisitCount] = useState(null);
 
    const getCount = async () => {
+     console.log(process.env.REACT_APP_API_ROUTE);
      try {
        const response = await fetch(
          `${process.env.REACT_APP_API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
