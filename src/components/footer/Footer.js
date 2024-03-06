@@ -20,7 +20,7 @@ const Footer = () => {
 
    useEffect(() => {
      getCount();
-   }, []);
+   });
 
   return (
     <footer className="footer">
