@@ -12,11 +12,18 @@ const Footer = () => {
            method: "PUT",
          }
        );
-       const data = await response.json();
 
-       console.log("data", data);
-
-       setVisitCount(data.updatedCount);
+       if (response.status === 200) {
+         const data = await response.json();
+         if (!data) {
+           console.error("Empty response received.");
+           return;
+         }
+         setVisitCount(data.updatedCount);
+       } else {
+         console.error(`Error: ${response.status} - ${response.statusText}`);
+       }
+       
      } catch (error) {
        console.error("Error fetching visit count:", error);
      }
