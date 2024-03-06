@@ -4,16 +4,23 @@ import "./footer.css";
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
-  // api key = ljgMtw61tKqyzVB5JZA4IA==dZY72z3THeEwBkSD
+   const getCount = async () => {
+     try {
+       const response = await fetch(
+         "https://countapi-jota.onrender.com/api/v1/increase?id=vedant_thakre&value=1"
+       );
+       const data = await response.json();
 
-  const getCount = () => {
-    console.log("Count function triggered");
-    setVisitCount(visitCount + 1);
-  };
+       // Assuming the API response contains the count in a 'value' property
+       setVisitCount(data.value);
+     } catch (error) {
+       console.error("Error fetching visit count:", error);
+     }
+   };
 
-  useEffect(() => {
-    getCount();
-  }, []);
+   useEffect(() => {
+     getCount();
+   }, []);
 
   return (
     <footer className="footer">
