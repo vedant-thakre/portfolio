@@ -4,25 +4,17 @@ import "./footer.css";
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
+  // api key = ljgMtw61tKqyzVB5JZA4IA==dZY72z3THeEwBkSD
+
   const getCount = () => {
     console.log("Count function triggered");
-    fetch(
-      "https://api.countapi.xyz/update/https://vedant-thakre.vercel.app/mouse/?amount=1"
-    )
-      .then((res) => res.json())
-      .then((res) => {
-        console.log("Updating the count");
-        setVisitCount(visitCount + 1);
-      })
-      .catch((error) => {
-        console.error("Error updating count:", error);
-      });
+    setVisitCount(visitCount + 1);
   };
-  
+
   useEffect(() => {
     getCount();
-  }, [])
-  
+  }, []);
+
   return (
     <footer className="footer">
       <div className="footer__container container">
