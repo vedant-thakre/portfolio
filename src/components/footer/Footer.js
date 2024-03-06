@@ -14,6 +14,8 @@ const Footer = () => {
        );
        const data = await response.json();
 
+       console.log(data);
+
        setVisitCount(data.updatedCount);
      } catch (error) {
        console.error("Error fetching visit count:", error);
