@@ -10,6 +10,7 @@ const Footer = () => {
     )
       .then((res) => res.json())
       .then((res) => {
+        console.log("Updating the count");
         setVisitCount(visitCount + 1);
       })
       .catch((error) => {
