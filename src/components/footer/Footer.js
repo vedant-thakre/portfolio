@@ -7,7 +7,7 @@ const Footer = () => {
    const getCount = async () => {
      try {
        const response = await fetch(
-         "https://countapi-jota.onrender.com/api/v1/increase?id=vedant_thakre&value=1",
+         "https://countapi-jota.onrender.com/ai/v1/increase?id=vedant_thakre&value=1",
          {
            method: "PUT", // Corrected placement as an option
          }
