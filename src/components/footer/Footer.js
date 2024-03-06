@@ -3,36 +3,36 @@ import "./footer.css";
 
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(null);
+  const [lastFetchedCount, setLastFetchedCount] = useState(null);
 
-   const getCount = async () => {
-     try {
-       const response = await fetch(
-         `${process.env.REACT_APP_API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
-         {
-           method: "PUT",
-         }
-       );
+  const getCount = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.REACT_APP_API_ROUTE}/api/v1/increase?id=vedant_thakre&value=1`,
+        {
+          method: "PUT",
+        }
+      );
 
-       if (response.status === 200) {
-         const data = await response.json();
-         if (!data) {
-           console.error("Empty response received.");
-           return;
-         }
-         setVisitCount(data.updatedCount);
-       } else {
-         console.error(`Error: ${response.status} - ${response.statusText}`);
-       }
+      if (response.status === 200) {
+        const data = await response.json();
+        if (!data) {
+          console.error("Empty response received.");
+          return;
+        }
+        setVisitCount(data.updatedCount);
+        setLastFetchedCount(data.updatedCount);
+      } else {
+        console.error(`Error: ${response.status} - ${response.statusText}`);
+      }
+    } catch (error) {
+      console.error("Error fetching visit count:", error);
+    }
+  };
 
-     } catch (error) {
-       console.error("Error fetching visit count:", error);
-     }
-   };
-
-
-   useEffect(() => {
-     getCount();
-   },[]);
+  useEffect(() => {
+    getCount();
+  }, []);
 
   return (
     <footer className="footer">
@@ -84,7 +84,9 @@ const Footer = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <span className="footer__copy">&#169; VedantThakre.</span>
-          <span className="footer__count">{visitCount}</span>
+          <span className="footer__count">
+            {visitCount !== null ? visitCount : lastFetchedCount}
+          </span>
         </div>
       </div>
     </footer>
