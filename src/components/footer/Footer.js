@@ -1,7 +1,26 @@
-import React from 'react';
-import './footer.css';
+import React, { useEffect, useState } from "react";
+import "./footer.css";
 
 const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  const getCount = () => {
+    fetch(
+      "https://api.countapi.xyz/update/https://vedant-thakre.vercel.app/mouse/?amount=1"
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        setVisitCount(visitCount + 1);
+      })
+      .catch((error) => {
+        console.error("Error updating count:", error);
+      });
+  };
+  
+  useEffect(() => {
+    getCount();
+  }, [])
+  
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -50,12 +69,13 @@ const Footer = () => {
             <i className="bx bxl-whatsapp"></i>
           </a>
         </div>
-        <span className="footer__copy">
-          &#169; VedantThakre. 
-        </span>
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <span className="footer__copy">&#169; VedantThakre.</span>
+          <span className="footer__count">{visitCount}</span>
+        </div>
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

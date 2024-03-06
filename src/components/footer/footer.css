@@ -49,12 +49,18 @@
 
 .footer__copy {
     display: block;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     color: var(--title-color);
     text-align: center;
     font-size: var(--smaller-font-size);
 }
 
+.footer__count {
+    display: block;
+    color: var(--title-color);
+    text-align: center;
+    font-size: var(--smaller-font-size);
+}
 
 /* Breakpoints */
 /* For large devices */
