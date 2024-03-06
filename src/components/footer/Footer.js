@@ -17,7 +17,7 @@ const Footer = () => {
        console.log(data);
 
        // Assuming the API response contains the count in a 'value' property
-       setVisitCount(data.value);
+       setVisitCount(data.updatedCount);
      } catch (error) {
        console.error("Error fetching visit count:", error);
      }
