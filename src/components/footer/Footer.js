@@ -27,10 +27,6 @@ const Footer = () => {
      getCount();
    },[]);
 
-   if (visitCount === null) {
-     return null;
-   }
-
   return (
     <footer className="footer">
       <div className="footer__container container">
