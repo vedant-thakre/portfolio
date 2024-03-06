@@ -7,7 +7,10 @@ const Footer = () => {
    const getCount = async () => {
      try {
        const response = await fetch(
-         "https://countapi-jota.onrender.com/api/v1/increase?id=vedant_thakre&value=1"
+         "https://countapi-jota.onrender.com/api/v1/increase?id=vedant_thakre&value=1",
+         {
+           method: "PUT", // Corrected placement as an option
+         }
        );
        const data = await response.json();
 
@@ -19,6 +22,7 @@ const Footer = () => {
        console.error("Error fetching visit count:", error);
      }
    };
+
 
    useEffect(() => {
      getCount();
