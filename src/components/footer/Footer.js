@@ -21,7 +21,6 @@ const Footer = () => {
           return;
         }
         setVisitCount(data.updatedCount);
-        setLastFetchedCount(data.updatedCount);
       } else {
         console.error(`Error: ${response.status} - ${response.statusText}`);
       }
@@ -29,8 +28,9 @@ const Footer = () => {
       console.error("Error fetching visit count:", error);
     }
   };
-
+  // need to change the code
   useEffect(() => {
+    setLastFetchedCount(visitCount);
     getCount();
   }, []);
 
