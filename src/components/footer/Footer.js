@@ -30,6 +30,7 @@ const Footer = () => {
   };
   // need to change the code
   // need to integrate google analytics
+  // need to make changes
   useEffect(() => {
     setLastFetchedCount(visitCount);
     getCount();
