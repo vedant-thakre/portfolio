@@ -31,7 +31,7 @@ const Footer = () => {
   // need to change the code
   // need to integrate google analytics
   // need to make changes
-  // adding responsiveness
+  // adding responsiveness one more change
   useEffect(() => {
     setLastFetchedCount(visitCount);
     getCount();
