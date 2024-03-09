@@ -28,11 +28,7 @@ const Footer = () => {
       console.error("Error fetching visit count:", error);
     }
   };
-  // need to change the code
-  // need to integrate google analytics
-  // need to make changes
-  // adding responsiveness one more change
-  useEffect(() => {
+   useEffect(() => {
     setLastFetchedCount(visitCount);
     getCount();
   }, []);
