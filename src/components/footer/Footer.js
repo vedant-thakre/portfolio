@@ -33,6 +33,7 @@ const Footer = () => {
     getCount();
   }, []);
 
+  
   return (
     <footer className="footer">
       <div className="footer__container container">
