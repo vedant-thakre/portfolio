@@ -7,6 +7,11 @@ import Project from './components/Projects/Project';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scroll/ScrollUp';
+import ReactGA from "react-ga";
+
+const TrackingId = process.env.TRACKING_ID;
+
+ReactGA.initialize(TrackingId);
 
 function App() {
   return (
