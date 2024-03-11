@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./footer.css";
-import ReactGA from "react-ga";
 
 const Footer = () => {
-  
-   useEffect(() => {
-     ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
 
   return (
     <footer className="footer">

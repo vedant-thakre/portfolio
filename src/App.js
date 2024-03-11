@@ -8,12 +8,20 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scroll/ScrollUp';
 import ReactGA from "react-ga";
+import { useEffect } from 'react';
 
-const TrackingId = process.env.TRACKING_ID;
+const TrackingId = process.env.REACT_APP_TRACKING_ID;
+
+console.log(TrackingId)
 
 ReactGA.initialize(TrackingId);
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+  
   return (
     <>
       <Header />
