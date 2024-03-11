@@ -12,15 +12,12 @@ import { useEffect } from 'react';
 
 const TrackingId = process.env.REACT_APP_TRACKING_ID;
 
-console.log(TrackingId)
-
 ReactGA.initialize(TrackingId);
 
 function App() {
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
-    console.log("Function hs been triggered", window.location.pathname);
   }, []);
 
   return (
