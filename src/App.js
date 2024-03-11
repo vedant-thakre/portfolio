@@ -20,8 +20,9 @@ function App() {
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
+    console.log("Function hs been triggered", window.location.pathname);
   }, []);
-  
+
   return (
     <>
       <Header />
