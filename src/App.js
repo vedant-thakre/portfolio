@@ -10,7 +10,6 @@ import ScrollUp from './components/scroll/ScrollUp';
 import ReactGA from "react-ga";
 import { useEffect } from 'react';
 
-// few changes
 const TrackingId = process.env.REACT_APP_TRACKING_ID;
 
 ReactGA.initialize(TrackingId);
