@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 
 const TrackingId = process.env.REACT_APP_TRACKING_ID;
 
+
 ReactGA.initialize(TrackingId);
 
 function App() {
