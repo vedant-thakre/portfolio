@@ -1,3 +1,4 @@
+import work from '../../assets/work.png';
 import work1 from '../../assets/work1.jpeg';
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
@@ -6,6 +7,15 @@ import work5 from "../../assets/work5.png";
 import work6 from "../../assets/work6.png";
 
 export const ProjectsData = [
+  {
+    id: 0,
+    image: work,
+    title: "UrbanMarket",
+    desc: "E-commerce Application",
+    category: "fullstack",
+    demo: "https://urbanmarket.vercel.app",
+    github: "https://github.com/vedant-thakre/Next-ecom",
+  },
   {
     id: 1,
     image: work1,
